@@ -1,20 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(
-    MultiProvider(
-      providers: [
-        // Add your providers here
-      ],
-      child: const EcoPickMobileApp(),
-    ),
-  );
+  runApp(const EcoPickMobileApp());
 }
 
 class EcoPickMobileApp extends StatelessWidget {
-  const EcoPickMobileApp({Key? key}) : super(key: key);
+  const EcoPickMobileApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +46,7 @@ class EcoPickMobileApp extends StatelessWidget {
 }
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -116,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class HomeTab extends StatelessWidget {
-  const HomeTab({Key? key}) : super(key: key);
+  const HomeTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -130,19 +122,19 @@ class HomeTab extends StatelessWidget {
             elevation: 2,
             child: Container(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   colors: [
-                    const Color(0xFF4CAF50),
-                    const Color(0xFF8BC34A),
+                    Color(0xFF4CAF50),
+                    Color(0xFF8BC34A),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
               padding: const EdgeInsets.all(20),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     'Welcome Back! 👋',
                     style: TextStyle(
                       color: Colors.white,
@@ -150,15 +142,15 @@ class HomeTab extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 8),
-                  const Text(
+                  SizedBox(height: 8),
+                  Text(
                     'Let\'s make the world greener together',
                     style: TextStyle(
                       color: Colors.white70,
                       fontSize: 14,
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  SizedBox(height: 16),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -233,12 +225,12 @@ class HomeTab extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          _ActivityItem(
+          const _ActivityItem(
             title: 'Dropped waste at Central Park',
             subtitle: 'Earned 50 points • 2 hours ago',
             icon: Icons.delete_outline,
           ),
-          _ActivityItem(
+          const _ActivityItem(
             title: 'Picked recyclables near downtown',
             subtitle: 'Earned 75 points • 1 day ago',
             icon: Icons.recycling,
@@ -342,7 +334,7 @@ class _ActivityItem extends StatelessWidget {
 
 // Placeholder screens for other tabs
 class EcoDropTab extends StatelessWidget {
-  const EcoDropTab({Key? key}) : super(key: key);
+  const EcoDropTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -365,7 +357,7 @@ class EcoDropTab extends StatelessWidget {
 }
 
 class EcoPickTab extends StatelessWidget {
-  const EcoPickTab({Key? key}) : super(key: key);
+  const EcoPickTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -388,7 +380,7 @@ class EcoPickTab extends StatelessWidget {
 }
 
 class WalletTab extends StatelessWidget {
-  const WalletTab({Key? key}) : super(key: key);
+  const WalletTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -411,7 +403,7 @@ class WalletTab extends StatelessWidget {
 }
 
 class ProfileTab extends StatelessWidget {
-  const ProfileTab({Key? key}) : super(key: key);
+  const ProfileTab({super.key});
 
   @override
   Widget build(BuildContext context) {

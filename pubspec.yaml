@@ -64,14 +64,14 @@ dependencies:
   flutter_animate: ^4.2.0
   lottie: ^2.6.0
 
-  # Firebase (Optional)
-  firebase_core: ^2.20.0
-  firebase_auth: ^4.10.0
-  firebase_database: ^10.0.0
-  firebase_storage: ^11.0.0
+  # Firebase (Optional - Commented for now)
+  # firebase_core: ^2.20.0
+  # firebase_auth: ^4.10.0
+  # firebase_database: ^10.0.0
+  # firebase_storage: ^11.0.0
 
   # Analytics
-  firebase_analytics: ^10.0.0
+  # firebase_analytics: ^10.0.0
 
   # Notifications
   flutter_local_notifications: ^14.1.1
@@ -103,15 +103,9 @@ flutter:
     - assets/icons/
     - assets/lottie/
 
-  fonts:
-    - family: Poppins
-      fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Poppins-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/Poppins-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/Poppins-Light.ttf
-          weight: 300
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
