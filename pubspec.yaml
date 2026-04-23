@@ -1,0 +1,117 @@
+name: eco_pick_mobile
+description: "Eco-Friendly Waste Management Mobile Application"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.7
+
+  # State Management
+  provider: ^6.0.0
+  bloc: ^8.1.1
+  flutter_bloc: ^8.1.3
+
+  # Navigation & Routing
+  go_router: ^13.0.0
+
+  # HTTP & API
+  http: ^1.1.0
+  dio: ^5.3.1
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Database
+  sqflite: ^2.3.0
+
+  # Maps
+  google_maps_flutter: ^2.4.0
+  geolocator: ^9.0.0
+
+  # Media
+  image_picker: ^1.0.4
+  image: ^4.1.3
+  cached_network_image: ^3.3.0
+
+  # Permissions
+  permission_handler: ^11.0.0
+
+  # Date & Time
+  intl: ^0.19.0
+
+  # Utilities
+  get_it: ^7.6.0
+  uuid: ^4.0.0
+  equatable: ^2.0.5
+
+  # Networking & Auth
+  jwt_decoder: ^2.0.1
+  crypto: ^3.0.3
+
+  # UI Components
+  flutter_animate: ^4.2.0
+  lottie: ^2.6.0
+
+  # Firebase (Optional)
+  firebase_core: ^2.20.0
+  firebase_auth: ^4.10.0
+  firebase_database: ^10.0.0
+  firebase_storage: ^11.0.0
+
+  # Analytics
+  firebase_analytics: ^10.0.0
+
+  # Notifications
+  flutter_local_notifications: ^14.1.1
+
+  # Logging
+  logger: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+  # Code Generation
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+
+  # Testing
+  mockito: ^5.4.4
+  mocktail: ^1.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
